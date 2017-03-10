@@ -12,16 +12,19 @@ nav{
     height: 233px;
     background-color:darkblue;    
     margin-bottom: 20px;
-    margin-left: 30px;
+    left: 30px;
+    position: relative;
     width: 97%;
     background-image: url('../Images/nav-logo10.jpg');
     
 }
-nav > div{
-    padding: 20px;
-    left: 20px;
-    position: relative;
-    width: 98%;
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.nav-menu{
+    flex-basis: 100px;
 }
 .dropdown{
     position: relative;
@@ -30,13 +33,7 @@ nav > div{
     .dropdown:hover .dropdown-content{
         display: block;
     }
-        .dropdown-content li a{
-            color: rgba(208, 125, 34, 0.9);
-            cursor: none;
-        }
-
-
-
+    
 .dropdown-content{
     list-style-type: none;
     width: 100px;
@@ -57,6 +54,7 @@ nav > div{
     }
     .dropdown-content li a{
         color: rgb(208, 125, 34);
+        cursor: none;
     }
 
 
@@ -67,6 +65,7 @@ nav a{
     color: limegreen;
     font-size: 1.5em;
     font-weight: bold;
+    text-decoration: none;
 }
 nav a:hover{
     text-decoration: none;
@@ -88,7 +87,7 @@ section > article{
     margin:30px;
 }
 section > article > img{
-    width: 500px;
+    flex-basis: 500px;
     height: 315px;
 }
 
@@ -113,5 +112,10 @@ footer{
     background-color: black;
     width: 100%;
     position: fixed;
+
+}
+
+
+@media screen and (max-width: 800px){
 
 }
