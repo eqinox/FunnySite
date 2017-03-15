@@ -17,6 +17,12 @@ nav{
     background-image: url('../Images/nav-logo10.jpg');
     
 }
+nav > img{
+    display: none;
+}
+#secondNav{
+    display: none;
+}
 #navigation{
     position: fixed;
     width: 100%;
@@ -55,13 +61,12 @@ nav{
 
 .dropdown-content{
     list-style-type: none;
-    width: 100px;
     margin: auto;
     padding: 0px;
     background-color: rgba(91, 91, 91, 0.8);
     position: absolute;
     top: 0px;
-    width: 150px;
+    width: 240px;
     height: 125px;
     border-radius: 5px;
     display: none;
@@ -129,6 +134,10 @@ aside ul{
     list-style: none;
     padding-right: 40px;
 }
+aside > h2{
+    color: limegreen;
+    text-align: center;
+}
 aside ul li{
     color: darksalmon;
     font-size: 1.4em;
@@ -139,6 +148,11 @@ aside ul li:hover{
     background-color: orangered;
     border-radius: 5px;
 }
+aside ul li a{
+    color: darksalmon;
+    text-decoration: none;
+}
+
 #categories{
     width: 50%;
     display: inline-block;
@@ -176,5 +190,27 @@ footer{
     aside{
         margin-bottom: 40px;
         background-color: rgba(20, 100, 22, 0.4);
+    }
+    nav > #navigation{
+        display: none;
+    }
+    nav > #secondNav{
+        display: block;
+    }
+    nav > #secondNav > div{
+        text-align: center;
+        padding: 5px;
+        border: 1px solid darkgreen;
+        background-color: rgba(15, 7, 18, 0.9);
+    }
+    nav > #secondNav > div:hover{
+        border: 5px outset rgba(14, 97, 43, 0.7);
+    }
+    nav > #secondNav > div:active{
+        border: 5px inset rgba(14, 97, 43, 0.7);
+    }
+    nav > #secondNav > div > a{
+        border: none;
+        color: limegreen;
     }
 }
